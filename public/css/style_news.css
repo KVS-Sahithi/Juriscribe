@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    transition: all 0.5s ease-in;
+}
+h1{
+    text-align: center;
+    margin: 2rem 2rem 0 2rem;
+    font-weight: 700;
+}
+.subtitle{
+    text-align: center;
+    margin: 0 2rem 2rem 2rem;
+    font-weight: 500;
+}
+.news-section{
+    margin: 7rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.card{
+    border: 0.1em solid black;
+    background-color: #ffbf23;
+}
+.news-section .card{
+    height: 40rem;
+    width: 20rem;
+}
+.news-section h5{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.btn{
+    border: none; 
+    border-radius: 0.5rem;
+    cursor: pointer; 
+    font-size:medium;
+    background-color: black;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #ffbf23; 
+    color: black;
+    border: 2px solid black;
+}
+.limited-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
