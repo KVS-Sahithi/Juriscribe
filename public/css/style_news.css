@@ -4,16 +4,19 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: white;
     transition: all 0.5s ease-in;
+    scroll-behavior: smooth;
 }
 h1{
     text-align: center;
     margin: 2rem 2rem 0 2rem;
     font-weight: 700;
+    animation: fadeIn 2s;
 }
 .subtitle{
     text-align: center;
     margin: 0 2rem 2rem 2rem;
     font-weight: 500;
+    animation: fadeIn 2s;
 }
 .news-section{
     margin: 7rem;
@@ -23,10 +26,15 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    animation: fadeIn 2s;
 }
 .card{
     border: 0.1em solid black;
     background-color: #ffbf23;
+    transition: transform .2s;
+}
+.card:hover {
+    transform: scale(1.05);
 }
 .news-section .card{
     height: 40rem;
@@ -43,6 +51,7 @@ h1{
     font-size:medium;
     background-color: black;
     color: white;
+    transition: background-color .2s, color .2s;
 }
 
 .btn:hover{
@@ -56,4 +65,9 @@ h1{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
