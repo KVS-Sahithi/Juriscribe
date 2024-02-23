@@ -289,7 +289,7 @@ body {
     display: flex;
     gap: 4rem;
     flex-direction: row; 
-    animation: marquee 30s linear infinite;
+    animation: marquee 50s linear infinite;
 }
 .sec5-elements .card:hover {
     transform: scale(1.1);
